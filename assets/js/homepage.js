@@ -78,7 +78,7 @@ var displayRepos = function (repos, searchTerm) {
 
         // check if current repo has issues or not
         if (repos[i].open_issues_count > 0) {
-            status.length.innerHTML =
+            statusEl.innerHTML =
                 "<i class='fas fa-times status-icon icon-danger'></i>" + repos[i].open_issues_count + " issue(s)";
         } else {
             statusEl.innerHTML = "<i class='fas fa-check-square status-icon icon-success'></i>";
